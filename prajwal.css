@@ -438,4 +438,7 @@ background-color: transparent !important;
     padding-left: 15px;
     padding-right: 15px;
   }
+  .pconly{
+    display: none;
+  }
 }

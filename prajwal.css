@@ -441,4 +441,27 @@ background-color: transparent !important;
   .pconly{
     display: none;
   }
+  /* Reversing this animation because of some lag in mobile screen */
+  @keyframes contentSlideLeft {
+      from {
+          transform: translate3d(-30%,0,0)
+      }
+
+      to {
+          transform: translate3d(0,0,0);
+          opacity: 1
+      }
+  }
+
+  @-webkit-keyframes contentSlideLeft {
+      from {
+          transform: translate3d(-30%,0,0);
+          opacity:0;
+      }
+
+      to {
+          transform: translate3d(0,0,0);
+          opacity: 1
+      }
+  }
 }

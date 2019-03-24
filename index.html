@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Prajwal Bhati</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./prajwal.css">
+</head>
+<body>
+  
+  <div id="mobileNav" class="overlay">
+    <div class="overlay-content">
+      <ul class="nav navbar-nav"style="float:left;padding:10%;width:100%;">
+        <li><a href="#"onclick="smoothScrollTo('.about');$('#menu-ico').click();">about</a></li>
+        <li><a href="#"onclick="smoothScrollTo('.scrollToskill');$('#menu-ico').click();">skills</a></li>
+        <li><a href="#"onclick="smoothScrollTo('.experience');$('#menu-ico').click();">experience</a></li>
+        <li><a href="#"onclick="smoothScrollTo('.portfolio');$('#menu-ico').click();">Portfolio</a></li>
+        <li><a href="#"onclick="smoothScrollTo('.contact');$('#menu-ico').click();">contact</a></li>
+      </ul> 
+    </div>
+  </div>
+  
+  <div class="background blur">
+    <!-- Navbar Begins -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle"id="menu-ico"onclick="toggleNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+         <a class="navbar-brand" href="#">Prajwal Bhati</a>
+       </div>
+         <div class="collapse navbar-collapse"id="fullNav">
+           <ul class="nav navbar-nav">
+             <li><a href="#"onclick="smoothScrollTo('.about')">about</a></li>
+             <li><a href="#"onclick="smoothScrollTo('.scrollToskill')">skills</a></li>
+             <li><a href="#"onclick="smoothScrollTo('.experience')">experience</a></li>
+             <li><a href="#"onclick="smoothScrollTo('.portfolio')">Portfolio</a></li>
+             <li><a href="#"onclick="smoothScrollTo('.contact')">contact</a></li>
+           </ul>   
+         </div>
+     </div>
+    </nav>
+    <!-- Navbar Ends -->
+    
+    <div class="container"style="color:white">
+      <div class="row text-center">
+        <div class="col-md-12 "style="padding-top:12%;padding-bottom:1%;">
+          <!-- https://instagram.fdel19-1.fna.fbcdn.net/vp/156469e33f0366d43fa990fa382d2103/5D4A092A/t51.2885-15/e35/54510833_1621094181326521_4133696743659204172_n.jpg?_nc_ht=instagram.fdel19-1.fna.fbcdn.net -->
+          
+          <img width="155px"height="155px"class="img-circle" src="https://instagram.fdel6-1.fna.fbcdn.net/vp/a01d6446b2fe02d91c3ead1ca55df833/5D10BCBF/t51.2885-15/e35/43188585_1708766795919084_6960542666703977191_n.jpg?_nc_ht=instagram.fdel6-1.fna.fbcdn.net"  alt="Prajwal Bhati">
+        </div>
+        <div class="col-md-12 "style="padding-bottom:0.5%;">
+          <span id="NameHeading">Prajwal Bhati</span>
+        </div>
+        <div class="col-md-12 ">
+          <span id="NameSubHeading">Web Developer , Ethical Hacker , Photographer </span>
+        </div>
+        <div class="col-md-12 "style="padding-top:2%;">
+          <a href="mailto:prajwalbhati@hotmail.com">
+            <button type="button" class="btn btn-NameHeading">
+            Hire me
+            </button>
+          </a>
+          <a href="https://drive.google.com/file/d/1gzwdx8KoFbZEmCRka5Puju9qLwz4tAZK/view"target="_blank">
+            <button type="button" class="btn btn-NameHeading">
+              Download CV
+            </button>
+          </a>
+        </div>
+      </div>      
+    </div>
+  </div>     
+  
+  <div class="container"style="margin-top:-26px;margin-bottom:4%;">
+    <div class="row">
+        <div class="col-md-12 text-center">
+          <a href="https://www.facebook.com/prajwal.bhati"target="_blank"><button type="button" data-toggle="tooltip" title="Follow me on Facebook!" class="btn btn-lg "style="border-radius:50%;background-color: #3b5999;"><i class="fa fa-facebook" style="font-size:20px;color:white"></i></button></a>
+          <a href="https://www.youtube.com/channel/UC-hlpmtqoqQKLo9OvJmsFSA"target="_blank"><button type="button" data-toggle="tooltip" title="Follow me on Youtube!" class="btn btn-lg btn-danger"style="border-radius:50%;"><i class="fa fa-youtube" style="font-size:20px"></i></button></a>
+          <a href="https://www.linkedin.com/in/prajwal-bhati-b6691610a/"target="_blank"><button type="button" data-toggle="tooltip" title="Follow me on LinkeIn!" class="btn btn-lg btn-primary"style="border-radius:50%;"><i class="fa fa-linkedin" style="font-size:20px"></i></button></a>  
+          <a href="https://www.instagram.com/prajwalbhati/"target="_blank"><button type="button" data-toggle="tooltip" title="Follow me on instagram!" class="btn btn-lg"style="border-radius:50%;background-color:#e4405f"><i class="fa fa-instagram" style="font-size:20px;color:white;"></i></button></a>
+        </div>  
+    </div>    
+  </div>
+  
+  <div class="container about fadeInUp"style="">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About</h2>
+        <p style="font-family:sans-serif;font-size:17px;font-weight:lighter;">
+          Hello ! My name is Prajwal Bhati. I am a Full Stack Web Developer, Ethical Hacker and Photographer.<br><br>
+          I am 3rd year Computer Science Engineering student at Delhi Technological University (DTU), New Delhi,India.<br><br>
+          Programming gives me the power to create impact. I love coding and developing cool stuff with it.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h2>Basic Information</h2>
+        <table class="table table-responsive"style="border-collapse:collapse;">
+          <tr>
+            <th style="font-size:18px;font-weight:lighter">Age</th>
+            <td style="font-family:sans-serif;font-size:18px;"> <span id="age"></span> </td>
+          </tr>
+          <tr>
+            <th style="font-size:18px;font-weight:lighter">Email</th>
+            <td style="font-family:sans-serif;font-size:18px;word-break:break-all;"> prajwalbhati@hotmail.com </td>
+          </tr>
+          <tr>
+            <th style="font-size:18px;font-weight:lighter">Phone</th>
+            <td style="font-family:sans-serif;font-size:18px;">(+91) 81-305-79379 </td>
+          </tr>
+          <tr>
+            <th style="font-size:18px;font-weight:lighter">Language</th>
+            <td style="font-family:sans-serif;font-size:18px;"> English , Hindi </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container text-center scrollToskill"style="margin-bottom:1.8%;">
+    <h2>Professional Skills</h2>
+  </div>
+  
+  <div class="container about fadeInUp">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="skill">
+          <h3>HTML <span style="float:right">70%</span></h3>
+          <div class="skill_bar">
+            <div class="skill_html"style="width:70%">95%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>CSS <span style="float:right">66%</span></h3>
+          <div class="skill_bar">
+            <div class="skill_html"style="width:66%">95%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>Javascript <span style="float:right">90%</span></h3>
+          <div class="skill_bar">
+            <div class="skill_html"style="width:90%">95%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>Bootstrap <span style="float:right">70%</span></h3>
+          <div class="skill_bar">
+            <div class="skill_html"style="width:70%">95%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>AngularJS 1.5 <span style="float:right">75%</span></h3>
+          <div class="skill_bar">
+            <div class="skill_html"style="width:75%">95%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>Java <span style="float:right">60%</span></h3>
+          <div class="skill_bar">
+            <div class="skill_html"style="width:60%">95%</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="skill">
+          <h3>NodeJS <span style="float:right">85%</span></h3>
+          <div class="skill_bar">
+            <div class="skill_html"style="width:85%">95%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>ExpressJS <span style="float:right">75%</span></h3>
+          <div class="skill_bar">
+            <div class="skill_html"style="width:75%;">95%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>MongoDB <span style="float:right">70%</span></h3>
+          <div class="skill_bar">
+            <div class="skill_html"style="width:70%">95%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>MySQL <span style="float:right">75%</span></h3>
+          <div class="skill_bar">
+            <div class="skill_html"style="width:75%">95%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>C++ <span style="float:right">80%</span></h3>
+          <div class="skill_bar">
+            <div class="skill_html"style="width:80%">95%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>Python <span style="float:right">45%</span></h3>
+          <div class="skill_bar">
+            <div class="skill_html"style="width:45%">95%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container text-center portfolio"style="margin-bottom:1.8%;">
+    <h2>Portfolio</h2>
+  </div>
+  
+  <div class="container  fadeInUp"style="margin-bottom:7%;">
+    <div class="row fadeInUp">
+      <div class="col-md-6 fadeInUp"style="padding:0;">
+        
+          <iframe width="95%" height="280"class="about" src="https://www.youtube.com/embed/dlkuDPj4Zy8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="95%" height="280"class="about" src="https://www.youtube.com/embed/GnidC9N0OqQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          
+          <div class="about"style="background:url('./img/snake.png') no-repeat ;background-size: cover;width:95%;height:280px;cursor:pointer"
+            onclick="window.open('./Games-html5-js/Snake Game/index.html','_blank');">
+          </div>
+      </div>
+      <div class="col-md-6 fadeInUp"style="padding:0;">                  
+          <iframe width="90%" height="280"class="about" src="https://www.youtube.com/embed/LgI-PpU-uDg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="90%" height="280"class="about" src="https://www.youtube.com/embed/14oLSR8a2B4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="about"style="background:url('Helicopter.png') no-repeat ;background-size: cover;width:90%;height:280px;cursor:pointer;"
+            onclick="window.open('./Games-html5-js/Flappy-Bird/index.html','_blank');">
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container text-center experience"style="margin-bottom:1.8%;">
+    <h2>Work Expreience</h2>
+  </div>
+  
+  <div class="container"style="padding-left:0;padding-top:0;padding-bottom:0;margin-bottom:8%;">
+    <div class="row about"style="margin-bottom:3%;padding:0">
+      <div class="col-md-3 work">
+        <h3>Jan 2019 - Feb 2019</h3>
+        <h2>BlueSeed Ventures USA</h2>
+      </div>
+      <div class="col-md-9 work-content"style="">
+        <h1 style="">Web And Software Developer Intern</h1>
+        <p style="">Implemented Oauth for Facebook/Google Login using Passportjs .
+Integrated Paypal and Stripe Payment Gateways into the web-app .
+Added New Express routes for file uploads, MongoDB Queries using
+mongoose .
+Implemented Custom Google Search to perform location based search .
+Added UI modifications, CSS3 Transitions, Form Input Validations</p>
+      </div>
+    </div>
+    
+    <div class="row about"style="padding:0;margin-bottom:3%;">
+      <div class="col-md-3 work">
+        <h3>Jun 2018 - Aug 2018</h3>
+        <h2>FLexiEle Gurugram,India</h2>
+      </div>
+      <div class="col-md-9 work-content"style="font-family:aileron;">
+        <h1 style="">NodeJS Developer Intern</h1>
+        <p style="">Researched, documented, rated alternatives for web architecture .
+Created Web models or prototypes for ongoing web site revisions .
+Select programming languages, design tools or applications .
+Implemented Drag and Drop Form Builders, creating API, Data model
+dynamically.</p>
+      </div>
+    </div>
+  </div>  
+  
+  
+  <div class="container text-center"style="margin-bottom:1.8%;">
+    <h2>Education</h2>
+  </div>
+  
+  <div class="container"style="padding-left:0;padding-top:0;padding-bottom:0;">
+    <div class="row about"style="margin-bottom:3%;padding:0">
+      <div class="col-md-3 work">
+        <h3> 2016 - 2020</h3>
+        <h2>Bachelor's &nbsp Degree</h2>
+      </div>
+      <div class="col-md-9 work-content"style="">
+        <h1 style="">Bachelor of Technology in Computer Science Engineering</h1>
+        <h1 style="color:grey">Delhi Technological University</h1>
+        <p style="">GPA 7.6 / 10</p>
+      </div>
+    </div>
+    
+    <div class="container"style="padding-left:0;padding-top:0;padding-bottom:0;">
+      <div class="row about"style="margin-bottom:3%;padding:0">
+        <div class="col-md-3 work">
+          <h3> 2001 - 2016</h3>
+          <h2>High School</h2>
+        </div>
+        <div class="col-md-9 work-content"style="">
+          <h1 style="">Science and Mathematics</h1>
+          <h1 style="color:grey">D.A.V Public School</h1>
+          <p style="">Score 95 / 100</p>
+        </div>
+      </div>
+  </div>  
+
+
+<footer class="container-fluid text-center contact"style="background:white;">
+  <div class="row"style="margin-bottom:3%;">
+    <div class="col-md-12">
+      <a href="https://www.facebook.com/prajwal.bhati"target="_blank"><button type="button" data-toggle="tooltip" title="Follow me on Facebook!" class="btn btn-lg "style="border-radius:50%;background-color: #3b5999;"><i class="fa fa-facebook" style="font-size:20px;color:white"></i></button></a>
+      <a href="https://www.youtube.com/channel/UC-hlpmtqoqQKLo9OvJmsFSA"target="_blank"><button type="button" data-toggle="tooltip" title="Follow me on Youtube!" class="btn btn-lg btn-danger"style="border-radius:50%;"><i class="fa fa-youtube" style="font-size:20px"></i></button></a>
+      <a href="https://www.linkedin.com/in/prajwal-bhati-b6691610a/"target="_blank"><button type="button" data-toggle="tooltip" title="Follow me on LinkeIn!" class="btn btn-lg btn-primary"style="border-radius:50%;"><i class="fa fa-linkedin" style="font-size:20px"></i></button></a>  
+      <a href="https://www.instagram.com/prajwalbhati/"target="_blank"><button type="button" data-toggle="tooltip" title="Follow me on instagram!" class="btn btn-lg"style="border-radius:50%;background-color:#e4405f"><i class="fa fa-instagram" style="font-size:20px;color:white;"></i></button></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h2 style="font-family:sans-serif;font-weight:bold">Prajwal Bhati</h2>
+      <p><span style="font-weight:bold">Phone</span> (+91) 81-305-79379</p>
+      <p><span style="font-weight:bold">Email</span> <a href="mailto:prajwalbhati@hotmail.com"onclick="">prajwalbhati@hotmail.com</a> </p>
+      <!-- <br> -->
+      <p style="color:grey;font-size:16px;">© Designed & Developed by Prajwal Bhati . All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="prajwal.js" charset="utf-8"></script>

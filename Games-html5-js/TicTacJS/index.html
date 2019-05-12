@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tic Tac Toe</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./game.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-center">
+            <h1>Tic Tac Toe AI Unbeatable</h1>
+          </div>
+        </div>        
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-center showLeft">
+            <br><br><br><br>            
+            <div class="btn-group-vertical btn-group-lg">
+              <button type="button" class="btn"onclick="start(0)">Easy</button>
+              <button type="button" class="btn"onclick="start(1)">Intermediate</button>
+              <button type="button" class="btn"onclick="start(2)">Advanced</button>
+            </div>
+          </div>            
+          <table class="table-responsive table-striped table-bordered text-center tablee hideLeft "align="center">
+            <tr class="cellStyle">
+              <td onclick="playerMove(0,0)"></td>
+              <td onclick="playerMove(0,1)"></td>
+              <td onclick="playerMove(0,2)"></td>
+            </tr>
+            <tr class="cellStyle">
+              <td onclick="playerMove(1,0)"></td>
+              <td onclick="playerMove(1,1)"></td>
+              <td onclick="playerMove(1,2)"></td>
+            </tr>
+            <tr class="cellStyle">
+              <td onclick="playerMove(2,0)"></td>
+              <td onclick="playerMove(2,1)"></td>
+              <td onclick="playerMove(2,2)"></td>
+            </tr>
+          </table>
+          <div class="text-center showLeft">
+            <!-- show score Easy medium hard local storage play store 50M   -->
+            <button type="button"data-toggle="modal" data-target="#myModal" class="btn scoreBoard"onclick="ShowScore()">            
+              <span >Score Board</span>
+            </button>
+          </div>                    
+        </div>          
+        
+      </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Score Board</h4>
+        </div>
+        <div class="modal-body">
+          <table class="table table-hover table-striped scoreTable">
+            <tr>
+              <th>Level</th>
+              <th>Win</th>
+              <th>Lose</th>
+              <th>Draw</th>
+            </tr>
+            <tr>
+              <th>Easy</th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Intermediate</th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Advanced</th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="./game.js" charset="utf-8"></script>
+  </body>
+</html>
